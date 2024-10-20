@@ -1,0 +1,14 @@
+name: setup-node
+description: "Setup Node.js ⚙️ - Cache dependencies ⚡ - Install dependencies 🔧"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Setup Node.js with pnpm ⚙️
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: "pnpm"
+
+    - name: Install Dependencies 🔧
+      run: pnpm install --frozen-lockfile

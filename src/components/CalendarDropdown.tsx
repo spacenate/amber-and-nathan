@@ -20,6 +20,7 @@ export default function CalendarDropdown() {
                 <a
                   href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Amber+%26+Nathan's+Wedding&dates=20250621T230000Z/20250622T050000Z&details=Celebrate+Amber+and+Nathan's+wedding+at+Maple+Falls,+WA!&location=Maple+Falls,+WA"
                   target="_blank"
+                  rel="noferrer"
                   className={`${
                     active ? "bg-sage/40 text-white" : "text-sage"
                   } block px-4 py-2 text-sm`}
