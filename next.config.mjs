@@ -8,8 +8,8 @@ export default function config(phase) {
 	 */
 	const nextConfig = {
 		output: "export",
-		basePath: isDev ? undefined : "/amber-and-nathan",
-		assetPrefix: isDev ? undefined : "/amber-and-nathan/",
+		// basePath: isDev ? undefined : "/amber-and-nathan",
+		// assetPrefix: isDev ? undefined : "/amber-and-nathan",
 		reactStrictMode: true,
 		images: { unoptimized: true },
 	};
