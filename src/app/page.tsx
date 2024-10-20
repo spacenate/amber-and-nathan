@@ -14,28 +14,28 @@ export default function Home() {
         <div className="absolute inset-0 bg-layer-1 bg-cover animate-drift animate-opacityPulseMedium"></div>
 
         <Image
-          src="/cloud1.png"
+          src="cloud1.png"
           width={568}
           height={141}
           alt="Cloud 1"
           className="absolute top-10 left-0 w-1/4 opacity-80 cloud animate-cloud-1"
         />
         <Image
-          src="/cloud2.png"
+          src="cloud2.png"
           width={440}
           height={99}
           alt="Cloud 2"
           className="absolute top-1/4 right-0 w-1/3 opacity-75 cloud animate-cloud-2"
         />
         <Image
-          src="/cloud3.png"
+          src="cloud3.png"
           width={411}
           height={117}
           alt="Cloud 3"
           className="absolute bottom-10 left-1/3 w-1/5 opacity-60 cloud animate-cloud-3"
         />
         <Image
-          src="/cloud4.png"
+          src="cloud4.png"
           width={227}
           height={63}
           alt="Cloud 4"

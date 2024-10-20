@@ -33,7 +33,7 @@ export default function CalendarDropdown() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="/wedding.ics"
+                  href="wedding.ics"
                   download="Amber_and_Nathan_Wedding.ics"
                   className={`${
                     active ? "bg-sage/40 text-white" : "text-sage"

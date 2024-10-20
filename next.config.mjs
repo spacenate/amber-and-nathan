@@ -11,6 +11,7 @@ export default function config(phase) {
 		basePath: isDev ? undefined : "/amber-and-nathan",
 		assetPrefix: isDev ? undefined : "/amber-and-nathan/",
 		reactStrictMode: true,
+		images: { unoptimized: true },
 	};
 	return nextConfig;
 }
