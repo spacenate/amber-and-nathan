@@ -23,8 +23,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <html lang="en">
+      <head>{basePath && <base href={basePath} />}</head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
