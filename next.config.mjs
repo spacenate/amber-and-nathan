@@ -1,11 +1,16 @@
-const isProd = process.env.NODE_ENV === "production";
+// @ts-check
+import { PHASE_DEVELOPMENT_SERVER } from "next/constants";
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-	output: "export",
-	basePath: isProd ? "/amber-and-nathan" : "",
-	assetPrefix: isProd ? "/amber-and-nathan/" : "",
-	reactStrictMode: true,
-};
-
-export default nextConfig;
+export default function config(phase) {
+	const isDev = phase === PHASE_DEVELOPMENT_SERVER;
+	/**
+	 * @type {import('next').NextConfig}
+	 */
+	const nextConfig = {
+		output: "export",
+		basePath: isDev ? undefined : "/amber-and-nathan",
+		assetPrefix: isDev ? undefined : "/amber-and-nathan/",
+		reactStrictMode: true,
+	};
+	return nextConfig;
+}
