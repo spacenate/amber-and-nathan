@@ -1,101 +1,72 @@
 import Image from "next/image";
+import CalendarDropdown from "../components/CalendarDropdown";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="bg-lilac min-h-screen text-lilac/90 flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 bg-linear-layer bg-cover animate-opacityPulseSlow"></div>
+      <div className="absolute inset-0 bg-layer-2 bg-cover animate-drift animate-opacityPulseFast"></div>
+      <div className="absolute inset-0 bg-layer-1 bg-cover animate-drift animate-opacityPulseMedium"></div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <Image
+        src="/cloud1.png"
+        width={568}
+        height={141}
+        alt="Cloud 1"
+        className="absolute top-10 left-0 w-1/4 opacity-80 cloud animate-cloud-1"
+      />
+      <Image
+        src="/cloud2.png"
+        width={440}
+        height={99}
+        alt="Cloud 2"
+        className="absolute top-1/4 right-0 w-1/3 opacity-75 cloud animate-cloud-2"
+      />
+      <Image
+        src="/cloud3.png"
+        width={411}
+        height={117}
+        alt="Cloud 3"
+        className="absolute bottom-10 left-1/3 w-1/5 opacity-60 cloud animate-cloud-3"
+      />
+      <Image
+        src="/cloud4.png"
+        width={227}
+        height={63}
+        alt="Cloud 4"
+        className="absolute bottom-1/4 right-1/4 w-1/4 opacity-70 cloud animate-cloud-4"
+      />
+
+      <div className="max-w-2xl mx-2 p-10 relative bg-white/50 rounded-2xl shadow-lg backdrop-blur-md">
+        <div className="subtle-title">Celebrate the union of</div>
+
+        <h1 className="text-5xl mt-3 font-bold uppercase tracking-wider text-center">
+          Amber & Nathan
+        </h1>
+
+        <h2 className="subtle-title mt-8">Initial details</h2>
+
+        <div className="mt-3 space-y-4">
+          <div className="flex items-center space-x-4">
+            <CalendarDropdown />
+            <p className="text-lg">June 21, 2025</p>
+          </div>
+
+          <div className="flex items-center space-x-4">
+            <a
+              href="https://www.google.com/maps/place/Maple+Falls,+WA/@48.9180446,-122.1348824,10750m/data=!3m2!1e3!4b1!4m6!3m5!1s0x54844d9757dcad01:0x240effb8e8e3715d!8m2!3d48.9242888!4d-122.077093!16zL20vMDEwdnNu!5m1!1e3?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noreferer"
+              className="card-btn"
+            >
+              📍
+            </a>
+            <p className="text-lg">Maple Falls, WA</p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        <p className="subtle-title mt-10">More to come</p>
+      </div>
     </div>
   );
 }

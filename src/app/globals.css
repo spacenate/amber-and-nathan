@@ -17,7 +17,24 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: AppleGothic, Helvetica, sans-serif;
+}
+
+.subtle-title {
+  @apply text-xl serif tracking-widest lowercase opacity-50;
+}
+
+.card-btn {
+  @apply w-16 h-16 flex items-center justify-center bg-ivory/30 rounded-xl shadow-md text-3xl transition-transform active:scale-95;
+}
+
+.cloud {
+  mix-blend-mode: screen;
+  filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 1));
+}
+
+.serif {
+  font-family: "Merriweather", serif;
 }
 
 @layer utilities {
