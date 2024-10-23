@@ -8,7 +8,7 @@ export default function CalendarDropdown() {
       <Menu>
         <Menu.Button className="relative card-btn">
           📅
-          <span className="absolute right-0 -mr-2 text-sunset">
+          <span className="absolute right-0 -mr-2">
             <RiArrowDropdownLine className="rotate-180" />
           </span>
         </Menu.Button>

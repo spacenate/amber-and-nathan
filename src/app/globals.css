@@ -25,7 +25,7 @@ body {
 }
 
 .card-btn {
-  @apply w-16 h-16 flex items-center justify-center bg-ivory/30 rounded-xl shadow-md text-3xl transition-transform active:scale-95;
+  @apply w-16 h-16 flex items-center justify-center bg-ivory/50 rounded-xl shadow-md text-3xl transition-transform active:scale-95;
 }
 
 .cloud {
