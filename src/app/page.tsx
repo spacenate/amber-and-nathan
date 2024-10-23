@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import CalendarDropdown from "../components/CalendarDropdown";
+import CoupleImg from "./images/2744.webp";
 
 export default function Home() {
   return (
@@ -8,10 +9,10 @@ export default function Home() {
       <Head>
         <title>Amber & Nathan</title>
       </Head>
-      <div className="bg-lilac min-h-screen text-lilac/90 flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-linear-layer bg-cover animate-opacityPulseSlow"></div>
-        <div className="absolute inset-0 bg-layer-2 bg-cover animate-drift animate-opacityPulseFast"></div>
-        <div className="absolute inset-0 bg-layer-1 bg-cover animate-drift animate-opacityPulseMedium"></div>
+      <div className="bg-lilac min-h-screen text-lilac/90 flex items-center justify-center">
+        <div className="fixed inset-0 bg-linear-layer bg-cover animate-opacityPulseSlow"></div>
+        <div className="fixed inset-0 bg-layer-2 bg-cover animate-drift animate-opacityPulseFast"></div>
+        <div className="fixed inset-0 bg-layer-1 bg-cover animate-drift animate-opacityPulseMedium"></div>
 
         <Image
           src="cloud1.png"
@@ -42,16 +43,20 @@ export default function Home() {
           className="absolute bottom-1/4 right-1/4 w-1/4 opacity-70 cloud animate-cloud-4"
         />
 
-        <div className="max-w-2xl mx-2 p-10 relative bg-white/50 rounded-2xl shadow-lg backdrop-blur-md">
-          <div className="subtle-title">Celebrate the union of</div>
+        <div className="max-w-2xl my-3 p-6 relative bg-white/50 rounded-2xl shadow-lg backdrop-blur-md">
+          <div className="subtle-title">We&apos;re getting married!</div>
 
-          <h1 className="text-5xl mt-3 font-bold uppercase tracking-wider text-center">
+          <h1 className="text-5xl my-3 font-bold uppercase tracking-wider">
             Amber & Nathan
           </h1>
 
-          <h2 className="subtle-title mt-8">Initial details</h2>
+          <Image
+            src={CoupleImg}
+            className="-mx-6 max-w-[inherit]"
+            alt="Amber and Nathan"
+          />
 
-          <div className="mt-3 space-y-4">
+          <div className="mt-6 flex space-x-12">
             <div className="flex items-center space-x-4">
               <CalendarDropdown />
               <p className="text-lg">June 21, 2025</p>
@@ -69,8 +74,6 @@ export default function Home() {
               <p className="text-lg">Maple Falls, WA</p>
             </div>
           </div>
-
-          <p className="subtle-title mt-10">More to come</p>
         </div>
       </div>
     </>

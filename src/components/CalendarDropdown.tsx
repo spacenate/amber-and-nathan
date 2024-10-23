@@ -9,11 +9,11 @@ export default function CalendarDropdown() {
         <Menu.Button className="relative card-btn">
           📅
           <span className="absolute right-0 -mr-2 text-sunset">
-            <RiArrowDropdownLine />
+            <RiArrowDropdownLine className="rotate-180" />
           </span>
         </Menu.Button>
 
-        <Menu.Items className="absolute left-0 mt-2 w-48 fw-bold bg-ivory/80 rounded-md shadow-lg backdrop-blur-md focus:outline-none">
+        <Menu.Items className="absolute left-0 -top-24 mt-2 w-48 fw-bold bg-ivory/80 rounded-md shadow-lg backdrop-blur-md focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
