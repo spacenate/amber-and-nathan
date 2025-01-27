@@ -15,6 +15,10 @@ const config: Config = {
         sage: "#8C542C",
         ivory: "#F7CFCA",
       },
+      fontFamily: {
+        sans: ["var(--font-geist-sans)"],
+        mono: ["var(--font-geist-mono)"],
+      },
       backgroundImage: (p) => ({
         "linear-layer": `linear-gradient(to bottom, ${p.theme("colors.lilac")} 0%, ${p.theme("colors.sage")} 30%, ${p.theme("colors.sky")} 100%)`,
         "layer-2": `radial-gradient(circle at 60% 40%, ${p.theme("colors.rose")} 0%, transparent 50%)`,
